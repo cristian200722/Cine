@@ -1,296 +1,66 @@
-/* Reset básico */
-* {
+body {
+
+    background-color:rgba(0, 0, 0, 0.925);
+    color: white;
+    font-family: arial;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Fondo general */
-body {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-                url("https://images.unsplash.com/photo-1524985069026-dd778a71c7b4");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Contenedor */
-.login-container {
-    background: rgba(0, 0, 0, 0.85);
-    padding: 40px;
-    border-radius: 15px;
-    width: 320px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
-}
-
-/* Títulos */
-.login-container h1 {
-    color: #e50914;
-    margin-bottom: 10px;
-    font-size: 32px;
-}
-
-.login-container h2 {
-    color: white;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-/* Inputs */
-.login-container input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    background: #333;
-    color: white;
-    font-size: 14px;
-}
-
-/* Botones */
-.login-container button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 8px;
-    background: #e50914;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* Hover botón principal */
-.login-container button:hover {
-    background: #b20710;
-}
-
-/* Botón secundario */
-.btn-secundario {
-    background: transparent;
-    border: 1px solid white;
-}
-
-.btn-secundario:hover {
-    background: white;
-    color: black;
-}
-
-/* Links sin estilo */
-a {
-    text-decoration: none;
-}
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Fondo */
-body {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-            url("https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Contenedor */
-.login-container {
-    background: rgba(0, 0, 0, 0.85);
-    padding: 40px;
-    border-radius: 15px;
-    width: 350px;
-    text-align: center;
-    box-shadow: 0 0 25px rgba(0,0,0,0.8);
-}
-
-/* Título */
-.login-container h1 {
-    color: #e50914;
-    margin-bottom: 25px;
-    font-size: 28px;
-}
-
-/* Inputs */
-.login-container input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 12px;
-    border: none;
-    border-radius: 8px;
-    background: #333;
-    color: white;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-/* Efecto al escribir */
-.login-container input:focus {
-    outline: none;
-    background: #444;
-    border: 1px solid #e50914;
-}
-
-/* Botón principal */
-.login-container button[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 8px;
-    background: #e50914;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.login-container button[type="submit"]:hover {
-    background: #b20710;
-}
-
-/* Botón secundario */
-.btn-secundario {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border-radius: 8px;
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-secundario:hover {
-    background: white;
-    color: black;
-}
-
-/* Quitar estilo del link */
-a {
-    text-decoration: none;
-}
-/* BODY como columna */
-body {
-    background: #141414;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-/* HEADER arriba */
+ 
+/* encabezado */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    background: rgba(0,0,0,0.9);
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: black;
+padding: 15px;
 }
-
-/* Título cartelera arriba */
-.titulo {
-    margin: 20px 40px;
-    font-size: 22px;
-}
-
-/* CONTENEDOR DE PELÍCULAS ABAJO IZQUIERDA */
-.cartelera {
-    margin-top: auto; /* 🔥 empuja hacia abajo */
-    padding: 20px 40px;
-
-    display: flex;
-    gap: 25px;
-    justify-content: flex-start; /* izquierda */
-    align-items: flex-end; /* abajo */
-    flex-wrap: wrap;
-}
-
-/* Tarjetas */
-.pelicula {
-    background: #1f1f1f;
-    border-radius: 12px;
-    overflow: hidden;
-    width: 200px;
-    transition: 0.3s;
-}
-
-.pelicula:hover {
-    transform: scale(1.05);
-}
-
-.pelicula img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-}
-
-.pelicula h3 {
-    padding: 10px;
-    font-size: 14px;
-}
-
-.pelicula button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: #e50914;
+nav  a {
     color: white;
+    margin: 20px;
+    text-decoration: none;
+
+}
+.cartelera{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.pelicula{
+    background: #222;
+    padding: 10px;
+    text-align: center;
+
+}
+.pelicula img{
+    width: 100%;
+   
+}
+button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
     cursor: pointer;
 }
-
-.pelicula button:hover {
-    background: #b20710;
+/* responsive */
+@media (max-width: 900px) {
+    .cartelera {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-/* NAV */
-nav {
-    display: flex;
-    align-items: center;
+@media (max-width: 500px) {
+    .cartelera {
+        grid-template-columns: 1fr;
+    }
 }
+.Serie{
+    background: #222;
+    padding: 10px;
+    text-align: center;
 
-/* Links del menú */
-nav a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #ccc;
-    font-size: 15px;
-    font-weight: 500;
-    position: relative;
-    transition: 0.3s;
 }
-
-/* Hover elegante */
-nav a:hover {
-    color: white;
-}
-
-/* Línea animada abajo */
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0%;
-    height: 2px;
-    background: #e50914;
-    transition: 0.3s;
-}
-
-nav a:hover::after {
+.Serie img{
     width: 100%;
+   
 }
