@@ -130,3 +130,68 @@ button{
     cursor:pointer;
     margin:0;            /* quita separación extra */
 }
+.registro-container{
+    width:360px;    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+
+    background:#1c1c1c;        /* gris oscuro combina con fondo negro */
+    padding:40px;
+    border-radius:15px;        /* esquinas redondeadas */
+    box-shadow:0 0 20px rgba(255,0,0,0.25); /* brillo rojo suave */
+    width:380px;
+     width:360px;
+    padding:35px;
+    background:#111;
+
+    border-radius:15px;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.registro-container h1{
+    font-size:50px;
+    margin:0;
+}
+
+.registro-container h2{
+    margin:0;
+}
+
+.registro-container form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.registro-container input{
+    width:300px;
+    padding:12px;
+    font-size:16px;
+}
+
+.registro-container a{
+    text-decoration:none;
+}
+
+/* solo botones del registro */
+.registro-container a{
+    width:220px;
+}
+
+.registro-container button{
+    width:100%;          /* ambos mismo ancho */
+    background:red;
+    color:white;
+    border:none;
+    padding:12px;
+    cursor:pointer;
+    margin:0;            /* quita separación extra */
+}
